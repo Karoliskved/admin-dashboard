@@ -2,18 +2,50 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 .header{
     border: 1px solid black;
    
     grid-area:  1/ 2 / 2 / 3;
 }
+.header input{
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 50%;
+}
 .sidebar{
     border: 1px solid black;
     grid-area: 1/ 1/ 3/ 2;
+    background-color: skyblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px 
+    
+}
+
+.logo, .actionBar, .settingBar{
+    display: grid;
+    grid-template-columns: 50px 2fr;
+    justify-content: start;
+    align-items: center;
+    
+    
+}
+.actionBar img, .settingBar img{
+    height: 25px;
+    align-self: center;
+    justify-self: center;
+    
 }
 .main{
     border: 1px solid black;
+    background: lightgrey;
 }
+.smallImage{
+    height: 25px;
+}
+
+
