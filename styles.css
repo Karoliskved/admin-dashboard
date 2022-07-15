@@ -90,7 +90,47 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
+    padding: 20px;
+}
+.card{
+    display: flex;
+    border: 1px black solid;
+    border-radius: 12px;
+    background-color: white;
+    overflow: hidden;
+    
+    
+}
+.card>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
 
+}
+.cardName{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+.card>div>p{
+    margin: 0px;
+    padding: 0px;
+
+}
+.card>div>div{
+    align-self: flex-end;
+    display: flex;
+    gap: 10px;
+}
+
+
+.stripe{
+    width: 30px;
+    background-color: orange;
+    padding: 0px;
+
+    
 }
 .smallImage{
     height: 25px;
