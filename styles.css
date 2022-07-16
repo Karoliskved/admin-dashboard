@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0px;
     box-sizing: border-box;
 }
 body {
+    font-family: 'Roboto';
     margin: 0px;
     padding: 0px;
 
@@ -10,13 +12,10 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 6fr;
     height: 100vh;
     width: 100vw;
-   
-
-
 }
 
 .header {
@@ -49,6 +48,7 @@ body {
     flex: 1;
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .userInfo {
@@ -56,6 +56,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: min(30%, 200px);
+    font-weight: bold;
 
 }
 
@@ -63,13 +64,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 60px
+    padding: 10px 60px;
+    font-weight: bold;
 }
 
 .userHello {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.adminName{
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 30px;
 }
 
 .userButton {
@@ -87,14 +95,22 @@ body {
     flex-direction: column;
     gap: 40px;
     padding: 10px;
+    font-size: 20px;
+    align-content: flex-start;
 
 }
 
-.logo,
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
 .actionBar,
 .settingBar {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
     justify-content: start;
     align-items: center;
     gap: 10px;
@@ -105,6 +121,7 @@ body {
     height: 25px;
     align-self: center;
     justify-self: center;
+    padding: 0px;
 
 }
 
@@ -118,6 +135,7 @@ body {
     grid-template-rows: 1fr 1fr;
     padding: 20px;
     padding-right: 40px;
+    row-gap: 10px;
 
 }
 
@@ -145,6 +163,7 @@ body {
     background-color: white;
     overflow: hidden;
     box-shadow: 0px 4px 5px 1px gray; 
+    
 }
 
 .cardText {
@@ -161,9 +180,10 @@ body {
     font-size: 20px;
 }
 
-.card>div>p {
+.bigText{
     margin: 0px;
     padding: 0px;
+    color: rgb(124, 124, 124);
 
 }
 
@@ -182,7 +202,6 @@ body {
 
 .announcementsContainer {
     grid-area: 1/2/2/3;
-    justify-self: stretch;
     display: flex;
     flex-direction: column;
 
@@ -209,7 +228,10 @@ body {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-   
+    color: rgb(124, 124, 124);  
+}
+.textWrapper{
+   /* padding-bottom: 10px;*/
 }
 
 .trending {
@@ -218,6 +240,7 @@ body {
     flex-direction: column;
     padding-top: 10px;
 }
+
 
 .smallImage {
     height: 25px;
@@ -245,10 +268,14 @@ button {
     color: white;
     border-radius: 15px;
     border: none;
+    font-size: 15px;
+    font-weight: bold;
 }
-h2, h3{
+h2{
     padding-bottom: 10px;
-    
+}
+h3{
+    padding-top: 10px;
 }
 
 hr {
@@ -258,4 +285,7 @@ hr {
     width: 96%;
     background-color: lightgray;
     height: 1px;
+}
+small{
+    font-size: 13px;
 }
