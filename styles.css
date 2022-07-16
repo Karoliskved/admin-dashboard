@@ -99,6 +99,9 @@ body {
     align-content: flex-start;
 
 }
+.sidebar img{
+    filter: invert(1);
+}
 
 .logo{
     display: grid;
@@ -152,7 +155,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 25px;
     padding: 0px 20px;
-    flex: 1;
+    flex: auto;
 
 }
 
@@ -212,8 +215,8 @@ body {
     border: 1px black solid;
     border-radius: 12px;
     padding: 20px;
-    flex: 1;
     display: flex;
+    flex: auto;
     flex-direction: column;
     justify-content: space-evenly;
     text-overflow: ellipsis;
@@ -222,6 +225,7 @@ body {
 }
 
 .smallerText {
+    box-sizing: border-box;
     font-size: 14px;
     display: -webkit-box;
     max-width: 100%;
@@ -231,7 +235,8 @@ body {
     color: rgb(124, 124, 124);  
 }
 .textWrapper{
-   /* padding-bottom: 10px;*/
+    
+    
 }
 
 .trending {
