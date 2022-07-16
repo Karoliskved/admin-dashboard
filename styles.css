@@ -150,8 +150,8 @@ body {
 .cardText {
     display: flex;
     flex-direction: column;
-
-    padding: 40px 10px;
+    justify-content: space-between;
+    padding: 20px 10px 20px 10px;
 
 }
 
@@ -167,12 +167,10 @@ body {
 
 }
 
-.card>div>div {
-
-    align-self: flex-end;
-    display: flex;
+.actions {
     display: flex;
     justify-content: flex-end;
+    
     gap: 10px;
 }
 
