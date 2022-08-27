@@ -1,296 +1,280 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Roboto';
-    margin: 0px;
-    padding: 0px;
-
+  font-family: 'Roboto';
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 6fr;
-    height: 100vh;
-    width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 6fr;
+  height: 100vh;
+  width: 100vw;
 }
 
 .header {
-    grid-area: 1/ 2 / 2 / 3;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    align-items: center;
-    position:relative;
-    box-shadow: 0px 4px 5px 1px gray; 
+  grid-area: 1/ 2 / 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 4px 5px 1px gray;
 }
 
 .searchbar {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 0px 60px;
-    padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0px 60px;
+  padding-top: 20px;
 }
 
 .searchbar input {
-    border-radius: 10px;
-    background-color: lightgray;
-    width: 75%;
-    height: 25px;
-    border: none;
-
+  border-radius: 10px;
+  background-color: lightgray;
+  width: 75%;
+  height: 25px;
+  border: none;
 }
 
 .searchInput {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .userInfo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: min(30%, 200px);
-    font-weight: bold;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(30%, 200px);
+  font-weight: bold;
 }
 
 .userControls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 60px;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  font-weight: bold;
 }
 
 .userHello {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.adminName{
-    display: flex;
-    flex-direction: column;
-    
-    font-size: 30px;
+.adminName {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 30px;
 }
 
 .userButton {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .sidebar {
-
-    grid-area: 1/ 1/ 3/ 2;
-    background-color: rgb(22, 120, 165);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 10px;
-    font-size: 20px;
-    align-content: flex-start;
-
+  grid-area: 1/ 1/ 3/ 2;
+  background-color: rgb(22, 120, 165);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 10px;
+  font-size: 20px;
+  align-content: flex-start;
 }
-.sidebar img{
-    filter: invert(1);
+.sidebar img {
+  filter: invert(1);
 }
 
-.logo{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
 }
 .actionBar,
 .settingBar {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
 }
 
 .actionBar img,
 .settingBar img {
-    height: 25px;
-    align-self: center;
-    justify-self: center;
-    padding: 0px;
-
+  height: 25px;
+  align-self: center;
+  justify-self: center;
+  padding: 0px;
 }
 
 .main {
+  grid-area: 2/2/3/3;
 
-    grid-area: 2/2/3/3;
-
-    background: rgb(243, 241, 241);
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 20px;
-    padding-right: 40px;
-    row-gap: 10px;
-
+  background: rgb(243, 241, 241);
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+  padding-right: 40px;
+  row-gap: 10px;
 }
 
 .projectContainer {
-    grid-area: 1/1/3/2;
-    display: flex;
-    flex-direction: column;
-  
+  grid-area: 1/1/3/2;
+  display: flex;
+  flex-direction: column;
 }
 
 .project {
-    display: grid;
-    height: fit-content;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 25px;
-    padding: 0px 20px;
-    flex: auto;
-
+  display: grid;
+  height: fit-content;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 25px;
+  padding: 0px 20px;
+  flex: auto;
 }
 
 .card {
-    display: flex;
-    border: 1px black solid;
-    border-radius: 12px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0px 4px 5px 1px gray; 
-    
+  display: flex;
+  border: 1px black solid;
+  border-radius: 12px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 4px 5px 1px gray;
 }
 
 .cardText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px 10px 20px 10px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px 20px 10px;
 }
 
 .cardName {
-    margin: 0px;
-    padding: 0px;
-    font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
 }
 
-.bigText{
-    margin: 0px;
-    padding: 0px;
-    color: rgb(124, 124, 124);
-
+.bigText {
+  margin: 0px;
+  padding: 0px;
+  color: rgb(124, 124, 124);
 }
 
 .actions {
-    display: flex;
-    justify-content: flex-end;
-    
-    gap: 10px;
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 10px;
 }
 
 .stripe {
-    width: 30px;
-    background-color: orange;
-    padding: 0px;
+  width: 30px;
+  background-color: orange;
+  padding: 0px;
 }
 
 .announcementsContainer {
-    grid-area: 1/2/2/3;
-    display: flex;
-    flex-direction: column;
-
+  grid-area: 1/2/2/3;
+  display: flex;
+  flex-direction: column;
 }
 
 .anCard {
-    background-color: white;
-    border: 1px black solid;
-    border-radius: 12px;
-    padding: 20px;
-    display: flex;
-    flex: auto;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-overflow: ellipsis;
-    box-shadow: 0px 4px 5px 1px gray; 
-
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-overflow: ellipsis;
+  box-shadow: 0px 4px 5px 1px gray;
 }
 
 .smallerText {
-    box-sizing: border-box;
-    font-size: 14px;
-    display: -webkit-box;
-    max-width: 100%;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    color: rgb(124, 124, 124);  
+  box-sizing: border-box;
+  font-size: 14px;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: rgb(124, 124, 124);
 }
-.textWrapper{
-    
-    
+.textWrapper {
 }
 
 .trending {
-    grid-area: 2/2/3/3;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
+  grid-area: 2/2/3/3;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
 }
 
-
 .smallImage {
-    height: 25px;
+  height: 25px;
 }
 
 .profile {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 
 .profileBig {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
 }
-.Title{
-    padding-left: 20px;
-    
+.Title {
+  padding-left: 20px;
 }
 button {
-    width: 90px;
-    height: 35px;
-    background-color: rgb(22, 120, 165);
-    color: white;
-    border-radius: 15px;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
+  width: 90px;
+  height: 35px;
+  background-color: rgb(22, 120, 165);
+  color: white;
+  border-radius: 15px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
 }
-h2{
-    padding-bottom: 10px;
+h2 {
+  padding-bottom: 10px;
 }
-h3{
-    padding-top: 10px;
+h3 {
+  padding-top: 10px;
 }
 
 hr {
-    border: 0;
-    clear: both;
-    display: block;
-    width: 96%;
-    background-color: lightgray;
-    height: 1px;
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: lightgray;
+  height: 1px;
 }
-small{
-    font-size: 13px;
+small {
+  font-size: 13px;
+}
+button:hover {
+  background-color: darkblue;
 }
